@@ -17,6 +17,14 @@ print(data.columns)
 #Read data from a specific column
 print(data['city'])
 
+#See basic properties of the data frame
+#Get (row,column)
+print(data.shape())
+#See properties of each column
+print(data.info())
+#See basic statistical properties of each column (e.g., mean, std, min, max)
+print(data.describe())
+
 #Specify which rows to pull from a specific column
 #This will pull rows 0-9 from column 'city'
 print(data['city'][0:10])
